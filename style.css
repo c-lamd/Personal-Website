@@ -1,0 +1,71 @@
+.homepage {
+    /* background-image: url(https://picsum.photos/600/700); */
+    background-color: #008b5c;
+    height: 100vh;
+    position: relative;
+}
+
+.homepage::before {
+    content: "";
+    background-image: url(https://picsum.photos/1600/2000);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: scroll; /* either fixed or scroll, decide later */
+    height: auto;
+    width: 100%;
+    opacity: 60%;
+}
+
+.main-header {
+    position: relative;
+    color:white;
+    top: 30vh;
+}
+.main-subheader {
+    position: relative;
+    color: white;
+    top: 30vh;
+}
+
+.subsection-header {
+    position: center;
+    font-size: 40px;
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1025px) {
+    .main-header {
+      font-size: 65px;
+    }
+    .main-subheader {
+      font-size: 27px;
+    }
+    .homepage::before {
+        position: absolute;
+        top: 0px;
+        right: 500px;
+        bottom: 0px;
+        left: 0px;
+    }
+  }
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1024px) {
+    .main-header {
+      font-size: 35px;
+      top: 30vh;
+    }
+    .main-subheader {
+      font-size: 20px;
+      top: 30vh
+    }
+    .homepage::before {
+        position: absolute;
+        background-position: center;
+        background-size: cover; /* NOTE TO SELF, THIS MAKES IT RESPONSIVE TO IPHONE VIEWS*/
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+  }
