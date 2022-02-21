@@ -1,10 +1,12 @@
 .homepage {
     /* background-image: url(https://picsum.photos/600/700); */
-    background-color: #008b5c;
+    background-color: #A5B899;
     height: 100vh;
     position: relative;
 }
-
+html, body{
+  width: 100%;
+}
 .homepage::before {
     content: "";
     background-image: url(https://picsum.photos/1600/2000);
@@ -28,14 +30,17 @@
     top: 30vh;
 }
 
-.subsection-header {
-    position: center;
-    font-size: 40px;
+ul.nonetype {
+  list-style-type: none;
 }
+li {
+  margin-bottom: 12px;
+}
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 1025px) {
     .main-header {
-      font-size: 65px;
+      font-size: 75px;
     }
     .main-subheader {
       font-size: 27px;
@@ -47,6 +52,18 @@
         bottom: 0px;
         left: 0px;
     }
+    .subsection-header {
+      font-size: 40px;
+  }
+    .subsection-text {
+      font-size: 23px;
+    }
+    .profile-pic {
+      width: 25vw;
+  }
+    li {
+      font-size: 20px;
+  }
   }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -68,4 +85,16 @@
         bottom: 0px;
         left: 0px;
     }
+    .subsection-header {
+      font-size: 30px;
+  }
+    .subsection-text {
+      font-size: 15px;
+  }
+    .profile-pic {
+      width: 70vw;
+  }
+    li {
+      font-size: 15px;
+  }
   }
