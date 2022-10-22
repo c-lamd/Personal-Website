@@ -8,65 +8,47 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    
-    <section class="homepage" id="home">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item active">
-                  <a class="nav-link text-white" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Resume</a>
-                  </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Career</a>
-                    <a class="dropdown-item" href="#">Photography</a>
-                    <a class="dropdown-item" href="#">Brewing</a>
-                    <a class="dropdown-item" href="#">Projects</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-        </nav>
-        </div>
+    <section class="homepage" id="home" style="display: flex;">
         <div class="container text-center">
             <div class="row">
-                <div class="col-lg-5"></div>
                 <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
                     <h1 class="main-header">Connor Duy Lam</h1>
-                    <p class="main-subheader">I am a Photographer</p>
-                    <p class="main-subheader">I am a Brewer</p>
-                    <p class="main-subheader">I am a Developer</p>
+                    <p class="main-subheader">Connect with me!</p>
+                    <p class="main-subheader">
+                      <a id="contact-link" href="https://github.com/c-lamd" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      &ensp;
+                      <a id="contact-link" href="https://www.linkedin.com/in/connor-lam-128636220/" target="_blank" title="Linkedin">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      &ensp;
+                      <a id="contact-link" href="https://www.instagram.com/c.lamd/" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                      </a>
+                      &ensp;
+                      <a id="contact-link" href="https://www.facebook.com/c.lamd24" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                      </a>
+                    </p>
+                    <!-- <button type="button" class="btn btn-outline-light main-subheader">Resume</button> -->
                 </div>
+                <div class="col-lg-5"></div>
             </div>
         </div>
     </section>
-    <section id="about-me" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1500" data-aos-once="true">
+    <section class= "about-me" id="about-me" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1500" data-aos-once="true">
       <div class="row container-fluid">
         <div class="col">
           <h3 class="subsection-header text-center mt-5">ABOUT</h3>
-          <p class="subsection-text text-center">Hello, World! I am a student at UC Berkeley studying computer and data science. </p>
+          <p class="subsection-text text-center">Hello, World! My name is Connor Duy Lam.</p>
         </div>
-        <div class="row justify-content-center">
-          <img class="col-md-auto profile-pic" src="https://picsum.photos/518/518" alt="Personal Headshot">
+        <div class="row justify-content-center" style="padding-bottom: 10vh;">
+          <img class="col-md-auto profile-pic" src="images\LinkedIn-1011111.jpg" alt="Personal Headshot">
           <div class="col-md-auto">
             <div class="row mt-3">
               <div class="col-lg-auto">
@@ -78,30 +60,136 @@
               </div>
               <div class="col-lg-auto">
                 <ul class="nonetype">
-                  <li><b>Major:</b> Computer and Data Science</li>
-                  <li><b>Year:</b> Junior</li>
+                  <li><b>Major:</b> Computer Science and Data Science</li>
+                  <li><b>Year:</b> Senior</li>
                   <li><b>Expected Graduation:</b> December 2023</li>
                 </ul>
               </div>
             </div>
-            <p>Description about me...</p>
+            <p>I am currently studying at the University of California, Berkeley. I was born and<br>
+              raised in southern California. In my free time I like to take photos, cook, surf, and boulder.<br>
+              Being at Berkeley, I have had the opportunity to learn from some of the greatest minds and to <br>
+              work alongside some of the hardest working individuals. It has influenced my own work ethic as <br>
+              well as introduced me to many opportunities one could not find elsewhere. I believe there is <br>
+              always something to be learned from everybody. Likewise, I look forward to learning from all the <br>
+              experiences and individuals I may encounter throughout life.</p>
           </div>
         </div>
+        <a href="Resume 20221003.pdf" target="_blank" style="margin:auto; width:fit-content"><button type="button" class="btn btn-outline-success">Resume</button></a>
+        <p class="subsection-text text-center">Click here to view my resume.</p>
       </div>
-        
-        
     </section>
+    <div class="timeline, container" id="timeline">
+      <h3 class="subsection-header text-center mt-5 container-fluid">TIMELINE</h3>
+      <h4 class="text-center container-fluid" style="color: rgb(172, 172, 172);">A brief overview of my career since beginning college</h4>
+      <section class="main-timeline">
+        <!-- start experience section-->
+        <div class="timeline" data-aos="zoom-out-right" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <div class="icon"></div>
+            <div class="date-content">
+                <div class="date-outer">
+                    <span class="date">
+                            <span class="month">May-Aug</span>
+                    <span class="year">2022</span>
+                    </span>
+                </div>
+            </div>
+            <div class="timeline-content">
+                <a href="https://rimble.io/" target="_blank"><h5 class="title">Rimble | Software Engineer Intern</h5></a>
+                <p class="description">
+                    Managed data ingestion, involving extraction, transformation, and loading of historical data as well as live-broadcasted information for the most popular 
+                    esports/games to date.
+                </p>
+            </div>
+        </div>
+        <!-- end experience section-->
+        <!-- start experience section-->
+        <div class="timeline" data-aos="zoom-out-left" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <div class="icon"></div>
+            <div class="date-content">
+                <div class="date-outer">
+                    <span class="date">
+                            <span class="month">Dec-Jan</span>
+                    <span class="year">2021</span>
+                    </span>
+                </div>
+            </div>
+            <div class="timeline-content">
+                <a href="https://www.delphieng.com/" target="_blank"><h5 class="title">Delphi Engineering Group | Software Engineer Intern</h5></a>
+                  <p class="description">
+                    Optimized code in commercial radar systems for aerospace technologies.
+                </p>
+            </div>
+        </div>
+        <!-- end experience section-->
+        <!-- start experience section-->
+        <div class="timeline" data-aos="zoom-out-right" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <div class="icon"></div>
+            <div class="date-content">
+                <div class="date-outer">
+                    <span class="date">
+                            <span class="month">Fall</span>
+                    <span class="year">2021</span>
+                    </span>
+                </div>
+            </div>
+            <div class="timeline-content">
+                <h5 class="title">Began Undergraduate Studies at UC Berkeley</h5>
+                <p class="description">
+                  Started pursuing a bachelor's in computer science and data science.
+                </p>
+            </div>
+        </div>
+        <!-- end experience section-->
+        <!-- start experience section-->
+        <div class="timeline" data-aos="zoom-out-left" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <div class="icon"></div>
+            <div class="date-content">
+                <div class="date-outer">
+                    <span class="date">
+                            <span class="month">2 years</span>
+                    <span class="year" style="font-size: 17px;">2019-2021</span>
+                    </span>
+                </div>
+            </div>
+            <div class="timeline-content">
+                <h5 class="title">Irvine Valley College</h5>
+                <p class="description">
+                    Associate's Degree in Mathematics, Physics, and Natural Sciences
+                </p>
+            </div>
+        </div>
+        <!-- end experience section-->
+    
+      </section>
+      <section class='projects' id="projects">
+        <h3 class="subsection-header text-center mt-5 container-fluid">PROJECTS</h3>
+      </section>
+    </div>
     
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
     </svg>
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      let list = document.querySelectorAll('.list');
+      function activeLink(){
+        list.forEach((item) =>
+        item.classList.toggle('active'))
+        this.classList.add('active');
+      }
+      list.forEach((item) =>
+      item.addEventListener('click',activeLink))
     </script>
 </body>
 </html>
