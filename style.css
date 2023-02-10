@@ -56,7 +56,7 @@ body {
 }
 .homepage::before {
     content: "";
-    background-image: url("clipboard.png"); /* url(https://picsum.photos/1600/2000); */
+    background-image: url(".//images//clipboard.png"); /* url(https://picsum.photos/1600/2000); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -98,31 +98,54 @@ body {
   text-align: center;
   display: inline-grid;
 }
-
+.project-column{
+  padding:20px;
+  justify-content: center;
+  align-items: center;
+}
 .project-card {
   width: 280px;
   height: 340px;
-  background-color: #A5B899;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
   border-radius: 20px;
+  background-color: #efefef;
+  background-blend-mode: multiply;
   box-shadow: 3px 3px 3px #6b6b6b;
   justify-content: center;
-  /* align-self: center; */
-}
-.project-card-text{
-  color:white
-}
-.project-column :hover{
-  background-color: #A5B899;
-  opacity: 80%;
 }
 
-.card-img{
-  width: 280px;
-  height: auto;
-  object-fit: contain;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+.project-card:hover {
+  background-color: #5d5d5d;
+  
 }
+.project-card:hover .project-card-text {
+  color: white;
+}
+.project-card:hover .project-card-desc {
+  color: white;
+}
+.project-card:hover .project-github-icon {
+  color: white
+}
+
+.project-card-text{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color:transparent;
+  font-weight:600;
+}
+.project-card-desc{
+  color: transparent;
+  font-weight: 500;
+  padding-inline: 20px;
+  text-align: left;
+}
+.project-github-icon{
+  color: transparent;
+}
+
 
 .timeline{
   vertical-align: auto;
