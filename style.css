@@ -40,7 +40,6 @@ body {
   background-color: #04AA6D;
   color: white;
 }
-
 .content {
   padding: 16px;
 }
@@ -80,7 +79,7 @@ body {
   text-decoration: none;
 }
 #mailto-link:hover {
-  color:rgb(235, 231, 166);
+  color:rgb(238, 226, 0);
   text-decoration: none;
   cursor: pointer;
 }
@@ -101,7 +100,9 @@ body {
 #about-me li {
   margin-bottom: 12px;
 }
-
+.self-desc {
+  word-break:break-all;
+}
 .projects-style {
   justify-content: center;
   align-items: center;
@@ -294,7 +295,8 @@ body {
 }
 
 .main-timeline .description {
-  margin-bottom: 0
+  margin-bottom: 0;
+  width: 90%;
 }
 
 .main-timeline .timeline:nth-child(2n) .date-content {
@@ -324,11 +326,6 @@ body {
 .footer-container {
   justify-content: center;
   text-align: center;
-}
-.footer-title {
-  font-size: 50px;
-  font-weight: 600;
-  color: white;
 }
 .footer-text {
   color:white;
@@ -477,6 +474,11 @@ body {
   .project-github-icon{
     color: transparent;
   }
+  .footer-title {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+  }
   }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -545,6 +547,11 @@ body {
     text-align: left;
   }
   .project-github-icon{
+    color: white;
+  }
+  .footer-title {
+    font-size: 40px;
+    font-weight: 600;
     color: white;
   }
   }
