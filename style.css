@@ -74,6 +74,16 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
+#mailto-link {
+  color:black;
+  text-decoration: none;
+}
+#mailto-link:hover {
+  color:rgb(235, 231, 166);
+  text-decoration: none;
+  cursor: pointer;
+}
 .main-header {
     position: relative;
     color:white;
@@ -103,48 +113,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.project-card {
-  width: 280px;
-  height: 340px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover;
-  border-radius: 20px;
-  background-color: #efefef;
-  background-blend-mode: multiply;
-  box-shadow: 3px 3px 3px #6b6b6b;
-  justify-content: center;
-}
 
-.project-card:hover {
-  background-color: #5d5d5d;
-  
-}
-.project-card:hover .project-card-text {
-  color: white;
-}
-.project-card:hover .project-card-desc {
-  color: white;
-}
-.project-card:hover .project-github-icon {
-  color: white
-}
-
-.project-card-text{
-  padding-top: 15px;
-  padding-bottom: 10px;
-  color:transparent;
-  font-weight:600;
-}
-.project-card-desc{
-  color: transparent;
-  font-weight: 500;
-  padding-inline: 20px;
-  text-align: left;
-}
-.project-github-icon{
-  color: transparent;
-}
 
 
 .timeline{
@@ -340,6 +309,31 @@ body {
   padding: 20px 50px 20px 0;
   text-align: right
 }
+.projects{
+  padding-bottom: 120px;
+}
+
+#footer {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  justify-content: center;
+  background-color: #A5B899;
+  width: 100%;
+  height: auto;
+}
+.footer-container {
+  justify-content: center;
+  text-align: center;
+}
+.footer-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+}
+.footer-text {
+  color:white;
+  font-size: 20px;
+}
 
 @media only screen and (max-width: 991px) {
   .main-timeline .date-content {
@@ -357,6 +351,7 @@ body {
   .main-timeline .timeline:nth-child(2n) .timeline-content {
       padding: 10px 30px 10px 0
   }
+  
 }
 
 @media only screen and (max-width: 767px) {
@@ -440,6 +435,48 @@ body {
     li {
       font-size: 20px;
   }
+  .project-card {
+    width: 280px;
+    height: 340px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+    background-color: #efefef;
+    background-blend-mode: multiply;
+    box-shadow: 3px 3px 3px #6b6b6b;
+    justify-content: center;
+  }
+  
+  .project-card:hover {
+    background-color: #5d5d5d;
+    
+  }
+  .project-card:hover .project-card-text {
+    color: white;
+  }
+  .project-card:hover .project-card-desc {
+    color: white;
+  }
+  .project-card:hover .project-github-icon {
+    color: white
+  }
+  
+  .project-card-text{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color:transparent;
+    font-weight:600;
+  }
+  .project-card-desc{
+    color: transparent;
+    font-weight: 500;
+    padding-inline: 20px;
+    text-align: left;
+  }
+  .project-github-icon{
+    color: transparent;
+  }
   }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -477,7 +514,39 @@ body {
     li {
       font-size: 15px;
   }
+  .project-card {
+    width: 280px;
+    height: 340px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+    background-color: #efefef;
+    background-blend-mode: multiply;
+    box-shadow: 3px 3px 3px #6b6b6b;
+    justify-content: center;
+  }
   
+  .project-card{
+    background-color: #5d5d5d;
+    
+  }
+  
+  .project-card-text{
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight:600;
+  }
+  .project-card-desc{
+    color: white;
+    font-weight: 500;
+    padding-inline: 20px;
+    text-align: left;
+  }
+  .project-github-icon{
+    color: white;
+  }
   }
 
   @media screen and (max-width: 768px) {
