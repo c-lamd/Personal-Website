@@ -443,6 +443,10 @@ body {
     background-blend-mode: multiply;
     box-shadow: 3px 3px 3px #6b6b6b;
     justify-content: center;
+    /* -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in; */
+    transition: all .2s ease-in;
   }
   
   .project-card:hover {
@@ -464,6 +468,7 @@ body {
     padding-bottom: 10px;
     color:transparent;
     font-weight:600;
+    transition: all .2s ease-in;
   }
   .project-card-desc{
     color: transparent;
