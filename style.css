@@ -475,9 +475,11 @@ body {
     font-weight: 500;
     padding-inline: 20px;
     text-align: left;
+    transition: all .2s ease-in;
   }
   .project-github-icon{
     color: transparent;
+    transition: all .2s ease-in;
   }
   .footer-title {
     font-size: 50px;
